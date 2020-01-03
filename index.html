@@ -17,14 +17,18 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="./css/bootstrap.min.css">
 
+  <!-- Mapbox -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+
   <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
 <body>
   <!-- Pagina central -->
+
   <header>
-    <!-- Menu -->
+    <!-- #region Menu -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary ">
       <a class="navbar-brand" href="#">ByteXByte</a>
       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
@@ -67,11 +71,11 @@
         </form>
       </div>
     </nav>
-    <!-- Fin Menu -->
-
+    <!-- #endregion -->
   </header>
+
   <main>
-    <!-- Carousel -->
+    <!-- #region CAROUSEL-->
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -93,9 +97,9 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <!-- fin Carousel -->
+    <!-- #endregion -->
 
-    <!-- Quienes somos -->
+    <!-- #region Quienes somos -->
     <div class="container mt-5 mb-5" id="quienessomos">
       <div class="row">
         <div class="col-12">
@@ -114,9 +118,9 @@
         </div>
       </div>
     </div>
-    <!-- Fin Quienes Somos -->
+    <!-- #endregion -->
 
-    <!-- Mision -->
+    <!-- #region Mision -->
     <div class="container mt-5 mb-5" id="mision">
       <div class="row">
         <div class="col-12">
@@ -196,9 +200,9 @@
         </div>
       </div>
     </div>
-    <!-- Fin Mision -->
+    <!-- #endregion -->
 
-    <!-- Vision -->
+    <!-- #region Vision -->
     <div class="container mt-5 mb-5" id="vision">
       <div class="row">
         <div class="col-12">
@@ -220,9 +224,9 @@
         </div>
       </div>
     </div>
-    <!-- Fin Vision -->
+    <!-- #endregion -->
 
-    <!-- Objetivos realizados -->
+    <!-- #region Objetivos realizados -->
     <div class="container mb-5 text-center" id="obrealizado">
       <div class="row">
         <div class="col-12">
@@ -257,18 +261,36 @@
         </div>
       </div>
     </div>
-    <!-- Fin Objetivos realizados -->
+    <!-- #endregion -->
+
+    <!-- #region Ubicanos -->
+    <div class="container mt-5 mb-5" id="vision">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+
+            <div class="card-header">
+              <h4 class="display-4">Ubícanos en:</h4>
+            </div>
+            <div class="card-body">
+              <div id='map' style='width: 1000px; height: 500px;'></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
   </main>
 
-  <!-- Pie de Pagina -->
+  <!-- #region Pie de Pagina -->
   <footer class="bg-dark text-info fixed-bottom ">
     <p class="text-center">
       Todos los derechos reservados 2019 &copy;
     </p>
   </footer>
-  <!-- Fin Pie de Pagina -->
+  <!-- #enregion -->
 
-  <!-- Pagina de carga -->
+  <!-- #region Pagina de carga -->
   <div class="pantalla-carga text-center" id="pantallaCarga">
     <p class="text-light display-4">
       <i class="fa fa-refresh fa-4x fa-spin text-light"></i>
@@ -276,10 +298,11 @@
       Cargando...
     </p>
   </div>
-  <!-- Fin de Pagina de carga -->
+  <!-- #endregion -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- #region SCRIPT JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -288,7 +311,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <!-- #region Mapbox -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+  <script src="./js/mapbox.js"></script>
+  <!-- #endregion -->
   <script src="./js/main.js"></script>
+  <!-- #endregion -->
 </body>
 
 </html>
