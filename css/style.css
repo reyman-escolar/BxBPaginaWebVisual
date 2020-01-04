@@ -31,3 +31,9 @@
 html{
     transition: 0.3s;
 }
+
+#prisistemas{
+    background-image: url('/img/presentacion.jpg');
+}
+
+.forma{}
