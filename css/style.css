@@ -33,7 +33,6 @@ html{
 }
 
 #prisistemas{
-    background: url('/img/presentacion.jpg');
+    background-image: url('/img/presentacion.jpg');
+    background-color: #151515;
 }
-
-.forma{}
