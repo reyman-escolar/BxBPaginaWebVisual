@@ -33,7 +33,7 @@ html{
 }
 
 #prisistemas{
-    background: url('/img/presentacion.jpg');
+    background: url('./../img/presentacion.jpg');
     background-color: #151515;
     background-size: cover;
         -moz-background-size: cover;
@@ -41,7 +41,7 @@ html{
         -o-background-size: cover;
 }
 #priComputadora{
-    background: url('/img/computadora.jpg');
+    background: url('./../img/computadora.jpg');
     background-size: cover;
         -moz-background-size: cover;
         -webkit-background-size: cover;
