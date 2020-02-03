@@ -28,11 +28,11 @@
 <body>
   <!-- Pagina central -->
 
-  <header>
+  <header class="mt-2">
     <!-- #region Menu -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-primary ">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
       <a class="navbar-brand" href="#">ByteXByte</a>
-      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      <button id="botonescondido" class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
         aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -83,9 +83,12 @@
     <!-- #endregion -->
   </header>
 
-  <main>
+  <main id="main">
     <!-- #region CAROUSEL-->
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="container">
+      <div class="row"></div>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide mt-5" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="https://placeholder.pics/svg/1200x500/FFFB00" class="d-block w-100" alt="...">
@@ -109,7 +112,8 @@
     <!-- #endregion -->
 
     <!-- #region Quienes somos -->
-    <div class="container mt-5 mb-5" id="quienessomos">
+    <div class="container" id="quienessomos"></div>
+    <div class="container mt-5">
       <div class="row">
         <div class="col-12">
           <div class="card">
@@ -130,7 +134,10 @@
     <!-- #endregion -->
 
     <!-- #region Mision -->
-    <div class="container mt-5 mb-5" id="mision">
+    <div class="container" id="mision">
+      <div class="row"></div>
+    </div>
+    <div class="container mt-5">
       <div class="row">
         <div class="col-12">
           <div class="card">
@@ -212,7 +219,10 @@
     <!-- #endregion -->
 
     <!-- #region Vision -->
-    <div class="container mt-5 mb-5" id="vision">
+    <div class="container" id="vision">
+      <div class="row"></div>
+    </div>
+    <div class="container mt-5 ">
       <div class="row">
         <div class="col-12">
           <div class="card">
@@ -236,7 +246,10 @@
     <!-- #endregion -->
 
     <!-- #region Objetivos realizados -->
-    <div class="container mb-5 text-center" id="obrealizado">
+    <div class="container" id="obrealizado">
+      <div class="row"></div>
+    </div>
+    <div class="container mt-5 text-center">
       <div class="row">
         <div class="col-12">
           <div class="card">
@@ -273,7 +286,7 @@
     <!-- #endregion -->
 
     <!-- #region Ubicanos -->
-    <div class="container mt-5 mb-5" id="vision">
+    <div class="container mt-5 mb-5">
       <div class="row">
         <div class="col-12">
           <div class="card">
@@ -311,9 +324,9 @@
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <!-- #region SCRIPT JS -->
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
   <!-- #region Mapbox -->
   <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
   <script src="./js/mapbox.js"></script>

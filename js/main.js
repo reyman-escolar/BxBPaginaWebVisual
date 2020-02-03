@@ -27,3 +27,28 @@ $("#linkobjr").click(function () {
         scrollTop: $("#obrealizado").offset().top
     }, 1000);
 });
+
+let linkquienes = document.getElementById("linkquienes");
+let linkmision = document.getElementById("linkmision");
+let linkvision = document.getElementById("linkvision");
+let linkobjr = document.getElementById("linkobjr");
+let botonescondido = document.getElementById("botonescondido");
+let collapsibleNavId = document.getElementById("collapsibleNavId");
+
+let esconderboton = () => {
+    botonescondido.setAttribute("class", "navbar-toggler d-lg-none collapsed");
+    botonescondido.setAttribute("aria-expanded", "false");
+    collapsibleNavId.setAttribute("class", "collapse navbar-collapse");
+}
+linkquienes.onclick = () => {
+    esconderboton();
+}
+linkmision.onclick = () => {
+    esconderboton();
+}
+linkvision.onclick = () => {
+    esconderboton();
+}
+linkobjr.onclick = () => {
+    esconderboton();
+}
