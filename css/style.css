@@ -63,3 +63,9 @@ img.zoom {
     -o-transform: scale(1.2);
     transform: scale(1.2);
 }
+#texto-piePagina{
+    height: 24px;
+}
+#textoPie{
+    margin-bottom: 0px;
+}

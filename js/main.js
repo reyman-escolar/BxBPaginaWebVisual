@@ -35,6 +35,12 @@ let linkobjr = document.getElementById("linkobjr");
 let botonescondido = document.getElementById("botonescondido");
 let collapsibleNavId = document.getElementById("collapsibleNavId");
 let imagen1 = document.getElementById("imagen1");
+let imagen2 = document.getElementById("imagen2");
+let imagen3 = document.getElementById("imagen3");
+let imagen4 = document.getElementById("imagen4");
+let imagen5 = document.getElementById("imagen5");
+let imagen6 = document.getElementById("imagen6");
+
 
 let esconderboton = () => {
     botonescondido.setAttribute("class", "navbar-toggler d-lg-none collapsed");
@@ -66,5 +72,20 @@ $(document).ready(function () {
 });
 
 imagen1.onclick=()=>{
+    redireccion();
+}
+imagen2.onclick=()=>{
+    redireccion();
+}
+imagen3.onclick=()=>{
+    redireccion();
+}
+imagen4.onclick=()=>{
+    redireccion();
+}
+imagen5.onclick=()=>{
+    redireccion();
+}
+imagen6.onclick=()=>{
     redireccion();
 }
