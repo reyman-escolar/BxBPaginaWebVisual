@@ -34,11 +34,15 @@ let linkvision = document.getElementById("linkvision");
 let linkobjr = document.getElementById("linkobjr");
 let botonescondido = document.getElementById("botonescondido");
 let collapsibleNavId = document.getElementById("collapsibleNavId");
+let imagen1 = document.getElementById("imagen1");
 
 let esconderboton = () => {
     botonescondido.setAttribute("class", "navbar-toggler d-lg-none collapsed");
     botonescondido.setAttribute("aria-expanded", "false");
     collapsibleNavId.setAttribute("class", "collapse navbar-collapse");
+}
+let redireccion =()=>{
+    location="https://www.google.com/intl/es/photos/about/"
 }
 linkquienes.onclick = () => {
     esconderboton();
@@ -51,4 +55,16 @@ linkvision.onclick = () => {
 }
 linkobjr.onclick = () => {
     esconderboton();
+}
+
+$(document).ready(function () {
+    $('.zoom').hover(function () {
+        $(this).addClass('transition');
+    }, function () {
+        $(this).removeClass('transition');
+    });
+});
+
+imagen1.onclick=()=>{
+    redireccion();
 }

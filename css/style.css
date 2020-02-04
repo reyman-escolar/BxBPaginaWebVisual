@@ -50,3 +50,16 @@ html{
 #text-present {
     background: rgba(255, 255, 255, 0.5);;
 }
+img.zoom {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+ 
+.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
