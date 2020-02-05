@@ -70,7 +70,7 @@ $(document).ready(function () {
         $(this).removeClass('transition');
     });
 });
-
+/* 
 imagen1.onclick=()=>{
     redireccion();
 }
@@ -88,4 +88,4 @@ imagen5.onclick=()=>{
 }
 imagen6.onclick=()=>{
     redireccion();
-}
+} */

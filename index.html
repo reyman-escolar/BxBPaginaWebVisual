@@ -32,8 +32,9 @@
     <!-- #region Menu -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
       <a class="navbar-brand" href="#">ByteXByte</a>
-      <button id="botonescondido" class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+      <button id="botonescondido" class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+        data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -255,33 +256,54 @@
           <div class="card">
             <h4 class="display-4 card-title">Proyectos Realizados</h4>
             <h4 class="card-text">PC's Armadas:</h5>
-              <div class="card-body mx-auto">
-                <div class="row mt-3">
-                  <div class="col-md-4 col-sm-12 ">
-                    <img src="https://placeholder.pics/svg/200x200" alt="" class="img-thumbnail zoom" id="imagen1">
+              <div class="card-body mx-auto" style="overflow:auto;width: 100%; height: 370px;">
+                <div class="card-columns card-columns-scrollable">
+                  <div class="card">
+                    <img src="https://placeholder.pics/svg/200x200" class="card-img" alt="..." data-toggle="modal"
+                      data-target="#imagen1">
                   </div>
-                  <div class="col-md-4 col-sm-12">
-                    <img src="https://placeholder.pics/svg/200x200" alt="" class="img-thumbnail zoom" id="imagen2">
+                  <div class="card">
+                    <img src="https://placeholder.pics/svg/200x200" class="card-img" alt="...">
                   </div>
-                  <div class="col-md-4 col-sm-12">
-                    <img src="https://placeholder.pics/svg/200x200" alt="" class="img-thumbnail zoom" id="imagen3">
+                  <div class="card">
+                    <img src="https://placeholder.pics/svg/200x200" class="card-img" alt="...">
                   </div>
-                </div>
-                <div class="row mt-3">
-                  <div class="col-md-4 col-sm-12">
-                    <img src="https://placeholder.pics/svg/200x200" alt="" class="img-thumbnail zoom" id="imagen4">
+                  <div class="card">
+                    <img src="https://placeholder.pics/svg/200x200" class="card-img" alt="...">
                   </div>
-                  <div class="col-md-4 col-sm-12">
-                    <img src="https://placeholder.pics/svg/200x200" alt="" class="img-thumbnail zoom" id="imagen5">
+                  <div class="card">
+                    <img src="https://placeholder.pics/svg/200x200" class="card-img" alt="...">
                   </div>
-                  <div class="col-md-4 col-sm-12">
-                    <img src="https://placeholder.pics/svg/200x200" alt="" class="img-thumbnail zoom" id="imagen6">
+                  <div class="card">
+                    <img src="https://placeholder.pics/svg/200x200" class="card-img" alt="...">
                   </div>
                 </div>
               </div>
           </div>
         </div>
       </div>
+      <!-- #region Modal -->
+      <div class="modal fade" id="imagen1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="https://placeholder.pics/svg/200x200" class="card-img-top" alt="...">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion -->
     </div>
     <!-- #endregion -->
 
