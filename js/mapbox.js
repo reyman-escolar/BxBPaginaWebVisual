@@ -3,7 +3,7 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
     center: [-71.5299519,-16.4012618], // starting position
-    zoom: 16 // starting zoom
+    zoom: 18 // starting zoom
 });
 map.on('load', function () {
     map.loadImage(
@@ -23,7 +23,7 @@ map.on('load', function () {
                                 'type': 'Feature',
                                 'geometry': {
                                     'type': 'Point',
-                                    'coordinates': [-71.5299519, -16.4012618],
+                                    'coordinates': [-71.529818, -16.401256],
                                 }
                             }
                         ]

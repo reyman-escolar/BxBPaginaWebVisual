@@ -69,3 +69,34 @@ img.zoom {
 #textoPie{
     margin-bottom: 0px;
 }
+
+#scrollcontenedor::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+#scrollcontenedor::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+#scrollcontenedor::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+#scrollcontenedor::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+#scrollcontenedor::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+#scrollcontenedor::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+#scrollcontenedor{
+    /*Estilos estándar experimentales (Principalmente Firefox)*/
+    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+}
