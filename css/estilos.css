@@ -72,7 +72,7 @@ img.zoom {
 #scrollcontenedor{
     overflow:auto;
     width: 100%; 
-    height: 400px;
+    height: 550px;
 }
 
 #scrollcontenedor::-webkit-scrollbar {
