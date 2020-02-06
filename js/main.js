@@ -27,11 +27,17 @@ $("#linkobjr").click(function () {
         scrollTop: $("#obrealizado").offset().top
     }, 1000);
 });
+$("#linkubi").click(function () {
+    $('html,body').animate({
+        scrollTop: $("#ubicanos").offset().top
+    }, 1000);
+});
 
 let linkquienes = document.getElementById("linkquienes");
 let linkmision = document.getElementById("linkmision");
 let linkvision = document.getElementById("linkvision");
 let linkobjr = document.getElementById("linkobjr");
+let linkubi = document.getElementById("linkubi");
 let botonescondido = document.getElementById("botonescondido");
 let collapsibleNavId = document.getElementById("collapsibleNavId");
 let imagen1 = document.getElementById("imagen1");
@@ -62,7 +68,9 @@ linkvision.onclick = () => {
 linkobjr.onclick = () => {
     esconderboton();
 }
-
+linkubi.onclick=()=>{
+    esconderboton();
+}
 $(document).ready(function () {
     $('.zoom').hover(function () {
         $(this).addClass('transition');

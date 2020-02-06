@@ -109,3 +109,24 @@ img.zoom {
     width: 250px;
     height: 250px;
 }
+
+@media (max-width: 600px) {
+    .banner {
+      height: 230px;
+    }
+}
+@media (min-width: 700px) {
+    .banner {
+      height: 430px;
+    }
+}
+@media (min-width: 900px) {
+    .banner {
+      height: 430px;
+    }
+}
+@media (min-width: 1024px) {
+    .banner {
+      height: 430px;
+    }
+}
