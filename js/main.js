@@ -1,3 +1,17 @@
+let linkquienes = document.getElementById("linkquienes");
+let linkmision = document.getElementById("linkmision");
+let linkvision = document.getElementById("linkvision");
+let linkobjr = document.getElementById("linkobjr");
+let linkubi = document.getElementById("linkubi");
+let botonescondido = document.getElementById("botonescondido");
+let collapsibleNavId = document.getElementById("collapsibleNavId");
+let imagen1 = document.getElementById("imagen1");
+let imagen2 = document.getElementById("imagen2");
+let imagen3 = document.getElementById("imagen3");
+let imagen4 = document.getElementById("imagen4");
+let imagen5 = document.getElementById("imagen5");
+let imagen6 = document.getElementById("imagen6");
+
 window.onload = () => {
     // console.log("ya cargó todo");
     let pantallaCarga = document.getElementById("pantallaCarga");
@@ -33,19 +47,6 @@ $("#linkubi").click(function () {
     }, 1000);
 });
 
-let linkquienes = document.getElementById("linkquienes");
-let linkmision = document.getElementById("linkmision");
-let linkvision = document.getElementById("linkvision");
-let linkobjr = document.getElementById("linkobjr");
-let linkubi = document.getElementById("linkubi");
-let botonescondido = document.getElementById("botonescondido");
-let collapsibleNavId = document.getElementById("collapsibleNavId");
-let imagen1 = document.getElementById("imagen1");
-let imagen2 = document.getElementById("imagen2");
-let imagen3 = document.getElementById("imagen3");
-let imagen4 = document.getElementById("imagen4");
-let imagen5 = document.getElementById("imagen5");
-let imagen6 = document.getElementById("imagen6");
 
 
 let esconderboton = () => {
