@@ -13,6 +13,7 @@ let imagen5 = document.getElementById("imagen5");
 let imagen6 = document.getElementById("imagen6");
 
 window.onload = () => {
+    // console.log("ya cargó todo");
     let pantallaCarga = document.getElementById("pantallaCarga");
     pantallaCarga.setAttribute("hidden", "hidden");
 }
@@ -78,3 +79,22 @@ $(document).ready(function () {
         $(this).removeClass('transition');
     });
 });
+/* 
+imagen1.onclick=()=>{
+    redireccion();
+}
+imagen2.onclick=()=>{
+    redireccion();
+}
+imagen3.onclick=()=>{
+    redireccion();
+}
+imagen4.onclick=()=>{
+    redireccion();
+}
+imagen5.onclick=()=>{
+    redireccion();
+}
+imagen6.onclick=()=>{
+    redireccion();
+} */

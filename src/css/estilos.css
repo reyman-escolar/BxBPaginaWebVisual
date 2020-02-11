@@ -119,6 +119,7 @@ img.zoom {
     border-radius: 10px;  
 }
 #scrollcontenedor{
+    /*Estilos estándar experimentales (Principalmente Firefox)*/
     scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
     scrollbar-width: thin;
 }
