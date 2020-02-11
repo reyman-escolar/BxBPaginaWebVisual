@@ -1,5 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 module.exports = {
     entry: './src/js/main.js',
     output: {
@@ -24,21 +26,22 @@ module.exports = {
         })
     ],
     module: {
-        rules: [{
-            // Para utilizar css de la siguiente manera
-            test: /\.css$/,
-            use: [
-                { loader: MiniCssExtractPlugin.loader },
-                { loader: "style-loader" },
-            ],
-            /* use: [
-                // Este metodo se usa para importar el archivo de estilos desde el js
-                {loader: "style-loader"},
-                // Este metodo se usa para que de como resultado un archivo css
-                { loader: MiniCssExtractPlugin.loader },
+        rules: [
+            {
                 // Para utilizar css de la siguiente manera
-                { loader: "css-loader" },
-            ] */
-        }]
-    }
-}
+                test: /\.scss$/,
+                use: [
+                    { loader: MiniCssExtractPlugin.loader },
+                    { loader: "css-loader" },
+                    { loader: "sass-loader" },
+                ],
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                    'file-loader',
+                ],
+            },
+        ],
+    },
+};

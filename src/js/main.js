@@ -1,6 +1,17 @@
+import './estilos.scss';
 import $ from "jquery";
-// import './mapbox'
-// import '../css/estilos.css';
+import './banner1.png';
+import './banner2.png';
+import './computadora.jpg';
+import './IMAG1734.jpg';
+import './IMAG2054.jpg';
+import './IMAG2094.jpg';
+import './IMAG2463.jpg';
+import './img1.png';
+import './img2.png';
+import './presentacion.jpg';
+
+
 
 let linkquienes = document.getElementById("linkquienes");
 let linkmision = document.getElementById("linkmision");
