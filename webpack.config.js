@@ -1,12 +1,14 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-    entry: './src/js/main.js',
+    entry: {
+        // @babel/polyfill, para dar soporte a funciones modernas en navegadores antiguos. Por ejemplo Promise o Object.assign. 
+        app: ['@babel/polyfill', './src/js/main.js'],
+    },
     output: {
         path: __dirname + '/build',
-        filename: 'js/bundle.js'
+        filename: 'js/bundlebabel.js'
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -41,6 +43,11 @@ module.exports = {
                 use: [
                     'file-loader',
                 ],
+            },
+            {
+                test: /\.js$/,
+                use: ["babel-loader"],
+                exclude: /node_modules/,
             },
         ],
     },
