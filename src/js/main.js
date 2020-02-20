@@ -3,13 +3,10 @@ import $ from "jquery";
 import './banner1.png';
 import './banner2.png';
 import './computadora.jpg';
-import './IMAG1734.jpg';
-import './IMAG2054.jpg';
-import './IMAG2094.jpg';
-import './IMAG2463.jpg';
 import './img1.png';
 import './img2.png';
 import './presentacion.jpg';
+import './map-point.png'
 
 
 
