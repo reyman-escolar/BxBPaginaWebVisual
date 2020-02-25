@@ -1,4 +1,4 @@
-mapboxgl.accessToken = 'pk.eyJ1IjoicmV5bWFuMjAyIiwiYSI6ImNrNDI0bnIwNjA3cDQzaHJ3djBnNjgycjAifQ.OWrg7bBLW-b9a6ieTG5qLQ';
+mapboxgl.accessToken = 'pk.eyJ1IjoiYnl0ZXhieXRlIiwiYSI6ImNrNzI3NzZ5ODBicWUzZ3FjOWVyNWI5NjcifQ.XEi4Fgcgfed-eXho4yStVQ';
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
@@ -7,7 +7,7 @@ var map = new mapboxgl.Map({
 });
 map.on('load', function () {
     map.loadImage(
-        './img/map-point.png',
+        './6d8bc2171622cc95152d034cb699cc50.png',
         function (error, image) {
             if (error) throw error;
             map.addImage('cat', image);

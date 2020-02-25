@@ -1,0 +1,6 @@
+Sistema de Control de inventario para farmacias, ferreteria, Abarrotes, Minimarketm Tienda de computo, etc
+Sistema de venta de Pasajes
+Sistema de Gestión de turno
+Elaboramos sistemas con o sin facturación electronica
+Nuestros Sistemas pueden contar o no con facturación electronica.
+Nos adaptamos a sus necesidades

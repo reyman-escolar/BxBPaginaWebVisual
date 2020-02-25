@@ -3,10 +3,10 @@ import $ from "jquery";
 import './banner1.png';
 import './banner2.png';
 import './computadora.jpg';
-import './img1.png';
-import './img2.png';
 import './presentacion.jpg';
-import './map-point.png'
+import './presentacionbanner.jpg';
+import './map-point.png';
+import './bytexbyte.ico';
 
 
 
@@ -65,8 +65,8 @@ let esconderboton = () => {
     botonescondido.setAttribute("aria-expanded", "false");
     collapsibleNavId.setAttribute("class", "collapse navbar-collapse");
 }
-let redireccion =()=>{
-    location="https://www.google.com/intl/es/photos/about/"
+let redireccion = () => {
+    location = "https://www.google.com/intl/es/photos/about/"
 }
 linkquienes.onclick = () => {
     esconderboton();
@@ -80,7 +80,7 @@ linkvision.onclick = () => {
 linkobjr.onclick = () => {
     esconderboton();
 }
-linkubi.onclick=()=>{
+linkubi.onclick = () => {
     esconderboton();
 }
 $(document).ready(function () {
