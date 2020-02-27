@@ -1,3 +1,14 @@
+import './estilos.scss';
+import $ from "jquery";
+import './banner1.png';
+import './banner2.png';
+import './computadora.jpg';
+import './presentacion.jpg';
+import './presentacionbanner.jpg';
+import './map-point.png';
+import './bytexbyte.ico';
+
+
 
 let linkquienes = document.getElementById("linkquienes");
 let linkmision = document.getElementById("linkmision");
