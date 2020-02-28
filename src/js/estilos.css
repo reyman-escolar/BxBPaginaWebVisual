@@ -48,6 +48,8 @@ html{
 }
 
 #prisistemas{
+    display:block;
+    margin:auto;
     background: url('./../img/presentacion.jpg');
     background-color: #151515;
     background-size: cover;
@@ -56,6 +58,8 @@ html{
         -o-background-size: cover;
 }
 #priComputadora{
+    display:block;
+    margin:auto;
     background: url('./../img/computadora.jpg');
     background-size: cover;
         -moz-background-size: cover;
@@ -63,7 +67,7 @@ html{
         -o-background-size: cover;
 }
 #text-present {
-    background: rgba(255, 255, 255, 1);;
+    background: rgba(56, 55, 55, 0.7);
 }
 img.zoom {
     transition: all .2s ease-in-out;
