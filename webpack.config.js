@@ -8,7 +8,7 @@ module.exports = {
     },
     output: {
         path: __dirname + '/build',
-        filename: 'js/bundlebabel.js'
+        filename: 'js/bundle.js'
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -22,6 +22,14 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'sistemas.html',
             template: './src/sistemas.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'nosotros.html',
+            template: './src/nosotros.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'servicio.html',
+            template: './src/servicio.html'
         }),
         new MiniCssExtractPlugin({
             filename: 'bundle.css'

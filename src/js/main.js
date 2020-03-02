@@ -1,5 +1,13 @@
-
-
+import './estilos.scss';
+import $ from "jquery";
+import './banner1.png';
+import './banner2.png';
+import './computadora.jpg';
+import './presentacion.jpg';
+import './servicio.jpg'
+import './presentacionbanner.jpg';
+import './map-point.png';
+import './bytexbyte.ico';
 
 let linkquienes = document.getElementById("linkquienes");
 let linkmision = document.getElementById("linkmision");
@@ -8,17 +16,17 @@ let linkobjr = document.getElementById("linkobjr");
 let linkubi = document.getElementById("linkubi");
 let botonescondido = document.getElementById("botonescondido");
 let collapsibleNavId = document.getElementById("collapsibleNavId");
-let imagen1 = document.getElementById("imagen1");
-let imagen2 = document.getElementById("imagen2");
-let imagen3 = document.getElementById("imagen3");
-let imagen4 = document.getElementById("imagen4");
-let imagen5 = document.getElementById("imagen5");
-let imagen6 = document.getElementById("imagen6");
+let t_servicios = document.getElementById("t_servicios");
+let fecha = document.getElementById("fecha");
 
 window.onload = () => {
     let pantallaCarga = document.getElementById("pantallaCarga");
     pantallaCarga.setAttribute("hidden", "hidden");
 }
+
+let fecha_actual = new Date();
+let anio = fecha_actual.getFullYear();
+fecha.innerText=anio;
 
 $("#linkquienes").click(function () {
     $('html,body').animate({
@@ -49,6 +57,22 @@ $("#linkubi").click(function () {
     }, 1000);
 });
 
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+        t_servicios.removeAttribute('class');
+        t_servicios.setAttribute('class','card-title');
+        console.log('menor o igual a 700');
+        
+    } else {
+        t_servicios.removeAttribute('class');
+        t_servicios.setAttribute('class','card-title display-3');
+        console.log('mayor a 700');
+    }
+}
+
+var x = window.matchMedia("(max-width: 700px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
 
 
 let esconderboton = () => {

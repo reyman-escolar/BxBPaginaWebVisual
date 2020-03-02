@@ -57,6 +57,16 @@ html{
         -webkit-background-size: cover;
         -o-background-size: cover;
 }
+#priservicio{
+    display:block;
+    margin:auto;
+    background: url('./../img/servicio.jpg');
+    background-color: #151515;
+    background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+}
 #priComputadora{
     display:block;
     margin:auto;
@@ -129,23 +139,65 @@ img.zoom {
     height: 250px;
 }
 
-@media (max-width: 600px) {
+#contenido-centrado{
+    top:10%; 
+    width: 100%;
+}
+
+@media (max-width: 0px) {
+    .banner {
+        height: 130px;
+    }
+    #contenido-centrado{
+        visibility: hidden;   
+    }
+}
+@media (max-width: 650px) {
     .banner {
       height: 230px;
     }
+    #contenido-centrado{
+        visibility: hidden;
+    }
 }
-@media (min-width: 700px) {
+@media (max-width: 700px) {
+    .banner {
+      height: 330px;
+    }
+
+}
+@media (max-width: 800px) {
+    .banner {
+      height: 330px;
+    }
+    #contenido-centrado{
+        top: 20%;
+    }
+}
+@media (max-width: 849px) {
+    .banner {
+      height: 330px;
+    }
+}
+@media (max-width: 1024px) {
     .banner {
       height: 430px;
     }
-}
-@media (min-width: 900px) {
-    .banner {
-      height: 430px;
+    #contenido-centrado{
+        top:10%; 
+        width: 100%;
     }
 }
-@media (min-width: 1024px) {
+@media (max-width: 1100px) {
     .banner {
-      height: 430px;
+      height: 530px;
     }
+    #subtitulo-centrado{
+       visibility: hidden;
+    }
+}
+@media (max-width: 1250px) {
+    .banner {
+      height: 530px;
+    }   
 }
