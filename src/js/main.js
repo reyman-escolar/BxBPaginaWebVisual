@@ -1,4 +1,4 @@
-import './estilos.scss';
+// import './estilos.css';
 import $ from "jquery";
 import './banner1.png';
 import './banner2.png';

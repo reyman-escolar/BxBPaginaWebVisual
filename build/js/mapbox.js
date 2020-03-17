@@ -7,7 +7,7 @@ var map = new mapboxgl.Map({
 });
 map.on('load', function () {
     map.loadImage(
-        './6d8bc2171622cc95152d034cb699cc50.png',
+        './img/map-point.png',
         function (error, image) {
             if (error) throw error;
             map.addImage('cat', image);

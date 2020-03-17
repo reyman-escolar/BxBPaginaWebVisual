@@ -38,13 +38,8 @@ module.exports = {
     module: {
         rules: [
             {
-                // Para utilizar css de la siguiente manera
-                test: /\.scss$/,
-                use: [
-                    { loader: MiniCssExtractPlugin.loader },
-                    { loader: "css-loader" },
-                    { loader: "sass-loader" },
-                ],
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
             },
             {
                 test: /\.(png|svg|jpg|gif|ico)$/,

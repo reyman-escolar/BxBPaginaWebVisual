@@ -1,5 +1,5 @@
 .colorjc{
-    color: white;;
+    color: white;
 }
 
 .face:hover{
@@ -9,10 +9,10 @@
     color: #00acee;
 }
 .wha:hover{
-    color:#00bb2d
+    color:#00bb2d;
 }
 .youtu:hover{
-    color: #E62117
+    color: #E62117;
 }
 #pantallaCarga{
     display: flex;
